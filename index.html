@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de Rentabilidad</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="card">
+        <h1>Calculadora - Dimas Lopez IDYGS92</h1>
+
+        <div class="input-group">
+            <label for="inversionInicial">Inversión Inicial (en $):</label>
+            <input type="number" id="inversionInicial" value="0">
+        </div>
+
+        <div class="input-group">
+            <label for="flujoEfectivoAnual">Flujos de Efectivo Anuales (en $):</label>
+            <input type="number" id="flujoEfectivoAnual" value="0">
+        </div>
+
+        <div class="input-group">
+            <label for="gastos">Gastos Anuales (en $):</label>
+            <input type="number" id="gastos" value="0">
+        </div>
+
+        <div class="input-group">
+            <label for="numeroAnos">Número de Años:</label>
+            <input type="number" id="numeroAnos" value="0">
+        </div>
+
+        <div class="input-group">
+            <label for="tasaInflacion">Tasa de Inflación (% anual):</label>
+            <input type="number" id="tasaInflacion" value="0">
+        </div>
+
+        <div class="input-group">
+            <label for="tasaDescuento">Tasa de Descuento (% anual):</label>
+            <input type="number" id="tasaDescuento" value="0">
+        </div>
+
+        <button onclick="calcularRentabilidad()">Calcular</button>
+
+        <div id="resultados"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
